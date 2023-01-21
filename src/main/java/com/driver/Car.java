@@ -19,15 +19,16 @@ changeSpeed(newSpeed, newDirection): set the speed and direction using move().
 
      */
 
-    public Car(String name, int wheels, String type, int doors, int gears, boolean isManual, int currentGear, int seats) {
+    public Car(String name, int wheels, int doors, int gears, boolean isManual, String type, int seats) {
+        //Hint: Car extends Vehicle
         super(name);
-        this.wheels = wheels;
-        this.type = type;
-        this.doors = doors;
-        this.gears = gears;
-        this.isManual = isManual;
-        this.currentGear = 1;
-        this.seats = seats;
+        this.wheels=wheels;
+        this.doors=doors;
+        this.gears=gears;
+        this.isManual=isManual;
+        this.type=type;
+        this.seats=seats;
+        this.currentGear=1;
     }
 
     public int getWheels() {

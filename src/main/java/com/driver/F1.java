@@ -10,7 +10,7 @@ accelerate(rate): add rate to the current speed and change the gear accordingly
 
     public F1(String name, boolean isManual) {
         //Use arbitrary values for parameters which are not mentioned
-        super(name,4,"Racing_Car", 4,5 , false, 1, 2);
+        super(name, 8, 4, 5, isManual, "luxury", 2);
     }
 
     public void accelerate(int rate){
