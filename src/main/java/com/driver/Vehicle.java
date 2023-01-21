@@ -2,6 +2,23 @@ package com.driver;
 
 public class Vehicle {
 
+
+    private int currentSpeed;
+    private int currentDirection;
+
+    /*Vehicle: name, currentSpeed, currentDirection
+
+constructor: given the name of the vehicle, initialize speed and direction as 0.
+move(speed, direction): set the current speed and direction
+steer(direction): Add direction to the currentDirection
+stop(): Stop the car by setting current speed to 0
+
+     */
+    public Vehicle(String name) {
+    this.name=name;
+    this.currentSpeed=0;
+    this.currentDirection=0;
+    }
     public String getName() {
         return name;
     }
@@ -26,23 +43,6 @@ public class Vehicle {
 
     public void setCurrentDirection(int currentDirection) {
         this.currentDirection = currentDirection;
-    }
-
-    private int currentSpeed;
-    private int currentDirection;
-
-    /*Vehicle: name, currentSpeed, currentDirection
-
-constructor: given the name of the vehicle, initialize speed and direction as 0.
-move(speed, direction): set the current speed and direction
-steer(direction): Add direction to the currentDirection
-stop(): Stop the car by setting current speed to 0
-
-     */
-    public Vehicle(String name) {
-    this.name=name;
-    this.currentSpeed=0;
-    this.currentDirection=0;
     }
 
     public void steer(int direction){
